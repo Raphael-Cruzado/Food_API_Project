@@ -8,25 +8,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <div class="meal-wrapper">
       <div class="meal-search">
-        <h1>Find meals with your Ingredients</h1>
+        <h1 class="title">Find meals with your Ingredients</h1>
         <blockquote>
           real food doesn't have ingredients, real food is ingredients. <br>
         <cite>- Jamie Oliver</cite>
         </blockquote>
+
         <div class="meal-search-box">
-        <input type="text" class="search-content" placeholder="Enter an Ingredient" id="search-input" />
-        <button type="submit" class="search-btn btn" id="search-btn">
-          <i class="fas fa-search"></i>
-        </button>
+          <input type="text" class="search-content" placeholder="Enter an Ingredient" id="search-input" />
+          <button type="submit" class="search-btn btn" id="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <div class="meal-result">
+        <h2 class="title">Your Search Results:</h2>
+        <div id="meal">
+          <!-- meal item -->
+          <div class="meal-name">
+            <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG90YXRvfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="potatoes">
+            <h2>Potato Chips</h2>
+            <a href="#" class="recipe-btn">Get Recipe</a>
+          </div>
+          <!-- end of meal item -->
         </div>
       </div>
     </div>
   </div>
+
+
   <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/6d4526dfb2.js" crossorigin="anonymous"></script>
 </body>
 </html>
